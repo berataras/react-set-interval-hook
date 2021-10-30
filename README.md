@@ -13,16 +13,20 @@ npm install --save react-set-interval-hook
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from "react";
 
-import MyComponent from 'react-set-interval-hook'
-import 'react-set-interval-hook/dist/index.css'
+import {ReactInterval} from "react-set-interval-hook";
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+
+  ReactInterval(() => {
+    console.log('Hello')
+  }, 1000)
+
+  return 'Hello'
 }
+
+export default App
 ```
 
 ## License
